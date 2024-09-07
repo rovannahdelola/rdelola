@@ -39,8 +39,9 @@
 }
 #rov {
     font-size: 8rem;
-    color: rgb(59, 1, 140); 
-    -webkit-text-stroke: 2px #e692ff;
+    color: #0d04f7; 
+    -webkit-text-stroke: 2px rgba(114, 161, 249, 0.5);
+    text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -54,6 +55,31 @@
         font-size: 2rem;
     }
 }
+
+/* Basic outline button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #007bff; /* Primary color border */
+    border-radius: 5px; /* Rounded corners */
+    color: #007bff; /* Primary color for text */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: #007bff; /* Primary color background */
+    color: #fff; /* White text */
+}
+
+/* Optional for more padding or responsive adjustment */
+.btn-outline-primary {
+    padding: 12px 25px; /* Extra padding for a larger button */
+}
+
 
 .home{
 	position: relative;
