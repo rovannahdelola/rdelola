@@ -1,0 +1,365 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 250px;
+	background-color: #333;
+	color: #fff;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-in-out;
+	z-index: 999;
+}
+
+.sidebar.active {
+	transform: translateX(0);
+}
+.sidebar .close-btn {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+}
+.sidebar .navlist {
+	color: #101010;
+	margin-top: 50px;
+}
+.sidebar .nav-item {
+	padding: 15px;
+}
+.sidebar .nav-link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.sidebar .nav-link:hover {
+	color: #0d04f7;
+	text-decoration: underline;
+}
+#rov {
+    font-size: 8rem;
+    color: rgb(59, 1, 140); 
+    -webkit-text-stroke: 2px #e692ff;
+}
+
+@media (max-width: 768px) {
+    #rov {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 456px) {
+    #rov {
+        font-size: 2rem;
+    }
+}
+
+.home{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/rov.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.hero-text h3{
+	font-family: 'Kanit', sans-serif;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 0%;
+	word-spacing: 10px;
+}
+
+.hero-text h1{
+	font-family: 'Dosis', sans-serif;
+	font-size: 75px;
+	color: #0d04f7;
+	font-weight: 800;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.hero-text h4{
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	word-spacing: 15px;
+	margin-bottom: 3.5rem;
+}
+
+.about {
+    padding: 50px 5%;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-img {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 20px 0;
+	height: auto;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.about-text h2 {
+    font-size: 3.5rem;
+    color: #0d04f7;
+    margin-bottom: 15px;
+	text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
+}
+
+.about-text h4 {
+    font-size: 1.5rem;
+    color: #7584fb;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.row.align-items-center {
+    align-items: center;
+}
+
+/*sa certifications nga part*/
+.certifications h2 {
+    font-size: 3.5rem;
+    color: #0d04f7;
+    margin-bottom: 20px;
+	text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
+}
+
+.certification-box{
+	padding: 45px 30px;
+	background: #241f2b;
+	border-radius: 0.8rem;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all ease .50s;
+}
+
+.certifications i{
+	font-size: 50px;
+	color: #0d04f7;
+	margin-bottom: 10px;
+}
+
+.certifications h3{
+	font-size: 23px;
+	font-weight: 700;
+	margin-bottom: 12px;
+	color: #7584fb;
+}
+
+.certifications p{
+	color: #c6c9d8bf;
+	font-size: 1.1rem;
+	line-height: 30px;
+	margin-bottom: 1.5rem;
+}
+
+/*sa portfolio ni nga part*/
+.portfolio h2 {
+    font-size: 3.5rem;
+    color: #0d04f7;
+    margin-bottom: 20px;
+	text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
+}
+
+.portfolio h4 {
+    font-size: 1.5rem;
+    color: #7584fb;
+    margin-bottom: 20px;
+}
+
+
+.portfolio-box{
+	padding: 45px 30px;
+	background: #241f2b;
+	border-radius: 0.8rem;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all ease .50s;
+}
+
+.portfolio i{
+	font-size: 50px;
+	color: #0d04f7;
+	margin-bottom: 10px;
+}
+
+.portfolio h3{
+	font-size: 23px;
+	font-weight: 700;
+	margin-bottom: 12px;
+	color: #7584fb;
+}
+
+.portfolio p{
+	color: #c6c9d8bf;
+	font-size: 1.1rem;
+	line-height: 30px;
+	margin-bottom: 1.5rem;
+}
+
+.conctact{
+	width: 100%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.conctact h4{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+/*mao ni style.css nga animate2 tahay sa mga words didto sa home page*/
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+/* Sidebar styles */
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: -250px; /* Initially hide the sidebar */
+	width: 250px;
+	height: 100%;
+	background-color: #333;
+	transition: right 0.3s ease;
+	z-index: 999;
+	padding-top: 1rem;
+}
+
+.sidebar.open {
+	right: 0; /* Show the sidebar */
+}
+
+/* Close button styles */
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 1.5rem;
+	color: white;
+	cursor: pointer;
+	z-index: 1001; /* Ensure it's above other sidebar content */
+}
+
+/* Overlay when the sidebar is open */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 998;
+	display: none;
+}
+
+.overlay.visible {
+	display: block;
+}
+
+@keyframes fadeInOut {
+	0%, 100% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.hero-text h3, .hero-text h1, .hero-text h4 {
+	animation-fill-mode: forwards;
+}
+
+.hero-text h3 {
+	animation-delay: 0s;
+}
+
+.hero-text h1 {
+	animation-delay: 0.5s;
+}
+
+.hero-text h4 {
+	animation-delay: 1s;
+}
+
+.btn-primary:hover {
+	transform: scale(1.1);
+}
+
+/* tung sa img sa about me nga page*/
+.hover-effect {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/*tung sa certifications nga box2*/
+/* Center the icon and make it wide */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Makes it full width */
+    margin-bottom: 20px; /* Optional margin for spacing */
+}
+
+/* Adjust icon size and width */
+.bx {
+    font-size: 100px; /* Adjust size as needed */
+    width: 100%; /* Makes it full width */
+    text-align: center;
+    display: inline-block;
+    color: #333; /* Optional: Change icon color */
+}
+
+
+
