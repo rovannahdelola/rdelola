@@ -82,5 +82,3 @@ ScrollReveal().reveal('.slide-up', {
     delay: 50,
     reset: true // Ensures animations occur every time elements come into view
 });
-
-

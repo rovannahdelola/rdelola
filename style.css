@@ -3,8 +3,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
-    color: #fff;
+    background-color: #8b8c89;
+    color: #e7ecef;
     padding: 0.5rem 1rem; 
     height: 50px; 
     display: flex;
@@ -19,28 +19,28 @@ header .logo img {
 
 header .navlist {
     display: flex;
-    gap: 1rem; /* Space between nav items */
+    gap: 1rem; 
 }
 
 header .nav-link {
-    color: #fff;
+    color: #e7ecef;
     text-decoration: none;
-    font-size: 0.9rem; /* Smaller font size */
-    padding: 0.5rem 1rem; /* Adjust padding for smaller nav items */
+    font-size: 0.9rem; 
+    padding: 0.5rem 1rem; 
 }
 
 header .nav-link:hover {
-    color: #0d04f7;
+    color: #274c77;
     text-decoration: underline;
 }
 
 header .bx-menu {
-    font-size: 1.2rem; /* Adjust font size of the menu icon */
+    font-size: 1.2rem; 
 }
 
 @media (max-width: 768px) {
     header .navlist {
-        display: none; /* Hide nav list on smaller screens */
+        display: none; 
     }
 }
 
@@ -51,8 +51,8 @@ header .bx-menu {
 	right: 0;
 	height: 100%;
 	width: 250px;
-	background-color: #333;
-	color: #fff;
+	background-color: #8b8c89;
+	color: #e7ecef;
 	transform: translateX(100%);
 	transition: transform 0.3s ease-in-out;
 	z-index: 999;
@@ -69,26 +69,27 @@ header .bx-menu {
 	cursor: pointer;
 }
 .sidebar .navlist {
-	color: #101010;
+	color: #8b8c89;
 	margin-top: 50px;
 }
 .sidebar .nav-item {
 	padding: 15px;
 }
 .sidebar .nav-link {
-	color: #fff;
+	color: #e7ecef;
 	text-decoration: none;
 	font-size: 1.2rem;
 }
 .sidebar .nav-link:hover {
-	color: #0d04f7;
+	color: #274c77;
 	text-decoration: underline;
 }
 #rov {
+	font-family: "Kanit", sans-serif;
     font-size: 8rem;
-    color: #0d04f7; 
-    -webkit-text-stroke: 2px rgba(114, 161, 249, 0.5);
-    text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
+    color: #274c77; 
+    -webkit-text-stroke: 2px #8b8c89;
+    text-shadow: 2px 2px 5px #e7ecef;
 }
 
 @media (max-width: 768px) {
@@ -109,22 +110,22 @@ header .bx-menu {
     padding: 10px 20px;
     font-size: 16px;
     text-decoration: none;
-    border: 2px solid #007bff; /* Primary color border */
-    border-radius: 5px; /* Rounded corners */
-    color: #007bff; /* Primary color for text */
-    background-color: transparent; /* Transparent background */
-    transition: all 0.3s ease; /* Smooth transition */
+    border: 2px solid #274c77; 
+    border-radius: 5px; 
+    color: #274c77; 
+    background-color: transparent; 
+    transition: all 0.3s ease; 
 }
 
 /* Hover effect */
 .btn:hover {
-    background-color: #007bff; /* Primary color background */
-    color: #fff; /* White text */
+    background-color: #274c77; 
+    color: #e7ecef; 
 }
 
 /* Optional for more padding or responsive adjustment */
 .btn-outline-primary {
-    padding: 12px 25px; /* Extra padding for a larger button */
+    padding: 12px 25px; 
 }
 
 .home{
@@ -143,7 +144,7 @@ header .bx-menu {
 
 .hero-text h3{
 	font-family: 'Kanit', sans-serif;
-	color: #fff;
+	color: #e7ecef;
 	font-size: 25px;
 	font-weight: 600;
 	margin-bottom: 0%;
@@ -153,14 +154,14 @@ header .bx-menu {
 .hero-text h1{
 	font-family: 'Dosis', sans-serif;
 	font-size: 75px;
-	color: #0d04f7;
+	color: #274c77;
 	font-weight: 800;
 	margin-bottom: 20px;
 	letter-spacing: 2px;
 }
 
 .hero-text h4{
-	color: #fff;
+	color: #e7ecef;
 	font-size: 25px;
 	font-weight: 600;
 	word-spacing: 15px;
@@ -169,7 +170,7 @@ header .bx-menu {
 
 .about {
     padding: 50px 5%;
-    background-color: #191919;
+    background-color: #e7ecef;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,23 +203,27 @@ header .bx-menu {
 }
 
 .about-text h2 {
-    font-size: 3.5rem;
-    color: #0d04f7;
+	font-family: "Kanit", sans-serif;
+    font-size: 4rem;
+    color: #274c77;
     margin-bottom: 15px;
-	text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
+	-webkit-text-stroke: 2px #8b8c89;
+    text-shadow: 2px 2px 5px #e7ecef;
 }
 
 .about-text h4 {
     font-size: 1.5rem;
-    color: #7584fb;
+    color: #8b8c89;
     margin-bottom: 15px;
+	text-align: justify;
 }
 
 .about-text p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #ccc;
+    color: #333;
     margin-bottom: 15px;
+	text-align: justify;
 }
 
 .row.align-items-center {
@@ -231,15 +236,17 @@ header .bx-menu {
 }
 
 .certifications h2 {
+	font-family: "Kanit", sans-serif;
     font-size: 3.5rem;
-    color: #0d04f7;
+    color: #274c77;
     margin-bottom: 20px;
-	text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
+	-webkit-text-stroke: 2px #8b8c89;
+    text-shadow: 2px 2px 5px #e7ecef;
 }
 
 .certification-box{
 	padding: 45px 30px;
-	background: #241f2b;
+	background: #8b8c89;
 	border-radius: 0.8rem;
 	border: 1px solid transparent;
 	cursor: pointer;
@@ -248,7 +255,7 @@ header .bx-menu {
 
 .certifications i{
 	font-size: 50px;
-	color: #0d04f7;
+	color: #274c77;
 	margin-bottom: 10px;
 }
 
@@ -256,11 +263,11 @@ header .bx-menu {
 	font-size: 23px;
 	font-weight: 700;
 	margin-bottom: 12px;
-	color: #7584fb;
+	color: #e7ecef;
 }
 
 .certifications p{
-	color: #c6c9d8bf;
+	color: #333;
 	font-size: 1.1rem;
 	line-height: 30px;
 	margin-bottom: 1.5rem;
@@ -272,22 +279,24 @@ header .bx-menu {
 }
 
 .portfolio h2 {
+	font-family: "Kanit", sans-serif;
     font-size: 3.5rem;
-    color: #0d04f7;
+    color: #274c77;
     margin-bottom: 20px;
-	text-shadow: 2px 2px 5px rgba(209, 204, 209, 0.5);
+	-webkit-text-stroke: 2px #8b8c89;
+    text-shadow: 2px 2px 5px #e7ecef;
 }
 
 .portfolio h4 {
     font-size: 1.5rem;
-    color: #7584fb;
+    color: #e7ecef;
     margin-bottom: 20px;
 }
 
 
 .portfolio-box{
 	padding: 45px 30px;
-	background: #241f2b;
+	background: #8b8c89;
 	border-radius: 0.8rem;
 	border: 1px solid transparent;
 	cursor: pointer;
@@ -296,7 +305,7 @@ header .bx-menu {
 
 .portfolio i{
 	font-size: 50px;
-	color: #0d04f7;
+	color: #274c77;
 	margin-bottom: 10px;
 }
 
@@ -304,11 +313,11 @@ header .bx-menu {
 	font-size: 23px;
 	font-weight: 700;
 	margin-bottom: 12px;
-	color: #7584fb;
+	color: #e7ecef;
 }
 
 .portfolio p{
-	color: #c6c9d8bf;
+	color: #333;
 	font-size: 1.1rem;
 	line-height: 30px;
 	margin-bottom: 1.5rem;
@@ -317,7 +326,7 @@ header .bx-menu {
 .conctact{
 	width: 100%;
 	height: 290px;
-	background: #191919;
+	background: #e7ecef;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -325,7 +334,7 @@ header .bx-menu {
 }
 
 .conctact h4{
-	color: white;
+	color: #274c77;
 	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 25px;
@@ -346,7 +355,7 @@ header {
 	right: -250px; /* Initially hide the sidebar */
 	width: 250px;
 	height: 100%;
-	background-color: #333;
+	background-color: #8b8c89;
 	transition: right 0.3s ease;
 	z-index: 999;
 	padding-top: 1rem;
@@ -443,5 +452,14 @@ header {
     color: #333; /* Optional: Change icon color */
 }
 
+.body{
+	background-color: #e7ecef;
+}
 
+.in h4{
+	color: #8b8c89;
+}
 
+.end-section{
+	background-color: #8b8c89;
+}
