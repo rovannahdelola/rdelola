@@ -3,7 +3,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #8b8c89;
+    background-color: transparent;
     color: #e7ecef;
     padding: 0.5rem 1rem; 
     height: 50px; 
@@ -25,7 +25,7 @@ header .navlist {
 header .nav-link {
     color: #e7ecef;
     text-decoration: none;
-    font-size: 0.9rem; 
+    font-size: 1rem; 
     padding: 0.5rem 1rem; 
 }
 
@@ -170,7 +170,7 @@ header .bx-menu {
 
 .about {
     padding: 50px 5%;
-    background-color: #e7ecef;
+    background-color: #8b8c89;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,9 +213,10 @@ header .bx-menu {
 
 .about-text h4 {
     font-size: 1.5rem;
-    color: #8b8c89;
+    color: #274c77;
     margin-bottom: 15px;
 	text-align: justify;
+	font-weight: bold;
 }
 
 .about-text p {
@@ -228,6 +229,15 @@ header .bx-menu {
 
 .row.align-items-center {
     align-items: center;
+}
+
+.about-box{
+	padding: 100px 90px;
+	background: #e7ecef;
+	border-radius: 0.8rem;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all ease .50s;
 }
 
 /*sa certifications nga part*/
@@ -246,7 +256,7 @@ header .bx-menu {
 
 .certification-box{
 	padding: 45px 30px;
-	background: #8b8c89;
+	background: #e7ecef;
 	border-radius: 0.8rem;
 	border: 1px solid transparent;
 	cursor: pointer;
@@ -261,9 +271,9 @@ header .bx-menu {
 
 .certifications h3{
 	font-size: 23px;
-	font-weight: 700;
+	font-weight: bold;
 	margin-bottom: 12px;
-	color: #e7ecef;
+	color: #8b8c89;
 }
 
 .certifications p{
@@ -275,7 +285,7 @@ header .bx-menu {
 
 /*sa portfolio ni nga part*/
 .portfolio{
-	margin-bottom: 310px;
+	margin-bottom: 370px;
 }
 
 .portfolio h2 {
@@ -289,14 +299,14 @@ header .bx-menu {
 
 .portfolio h4 {
     font-size: 1.5rem;
-    color: #e7ecef;
+    color: #8b8c89;
     margin-bottom: 20px;
 }
 
 
 .portfolio-box{
 	padding: 45px 30px;
-	background: #8b8c89;
+	background: #e7ecef;
 	border-radius: 0.8rem;
 	border: 1px solid transparent;
 	cursor: pointer;
@@ -311,9 +321,9 @@ header .bx-menu {
 
 .portfolio h3{
 	font-size: 23px;
-	font-weight: 700;
+	font-weight: bold;
 	margin-bottom: 12px;
-	color: #e7ecef;
+	color: #8b8c89;
 }
 
 .portfolio p{
@@ -371,7 +381,7 @@ header {
 	top: 10px;
 	right: 10px;
 	font-size: 1.5rem;
-	color: white;
+	color: #8b8c89;
 	cursor: pointer;
 	z-index: 1001; /* Ensure it's above other sidebar content */
 }
@@ -409,23 +419,27 @@ header {
 
 .hero-text h3 {
 	animation-delay: 0s;
+	animation-duration: 1.5s;
 }
 
 .hero-text h1 {
-	animation-delay: 0.5s;
+	animation-delay: 1s;
+	animation-duration: 2s;
 }
 
 .hero-text h4 {
-	animation-delay: 1s;
+	animation-delay: 2s;
+	animation-duration: 2.5s;
 }
 
 .btn-primary:hover {
 	transform: scale(1.1);
+	transition: transform 0.5s ease;
 }
 
 /* tung sa img sa about me nga page*/
 .hover-effect {
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition: transform 0.7s ease, box-shadow 0.7s ease;
 }
 
 .hover-effect:hover {
@@ -453,13 +467,17 @@ header {
 }
 
 .body{
-	background-color: #e7ecef;
+	background-color: #8b8c89;
 }
 
 .in h4{
-	color: #8b8c89;
+	color: #e7ecef;
 }
 
 .end-section{
-	background-color: #8b8c89;
+	background-color: #e7ecef;
+}
+
+.end-section p{
+	color: #333;
 }
