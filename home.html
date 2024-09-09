@@ -256,17 +256,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
         <script>
-        // JavaScript to redirect to index.html when reloading
-        window.addEventListener('load', function() {
-            if (!localStorage.getItem('redirected')) {
-                // Set a flag in localStorage to indicate that redirection has occurred
-                localStorage.setItem('redirected', 'true');
-                window.location.href = './index.html';
-            } else {
-                // Clear the flag for future visits
-                localStorage.removeItem('redirected');
-            }
-        });
+            window.addEventListener('load', function() {
+                // Check if redirection has already occurred in this session
+                if (!sessionStorage.getItem('redirected')) {
+                    // Set a flag in sessionStorage to indicate redirection
+                    sessionStorage.setItem('redirected', 'true');
+                    // Redirect to index.html
+                    window.location.href = './index.html';
+                } else {
+                    // Clear the flag for future sessions
+                    sessionStorage.removeItem('redirected');
+                }
+            });
     </script>
 </body>
 </html>
