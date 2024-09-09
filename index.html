@@ -179,12 +179,13 @@
     <!-- JavaScript to delay redirect by 5 seconds -->
     <script>
         window.addEventListener('load', function() {
-            // Check if the URL parameter `redirected` exists
-            const urlParams = new URLSearchParams(window.location.search);
-            if (!urlParams.has('redirected')) {
-                // Redirect to home.html with the `redirected=true` parameter
+            // Check if the redirection flag is set
+            if (!sessionStorage.getItem('redirectedFromHome')) {
+                // Set a flag in sessionStorage
+                sessionStorage.setItem('redirectedFromHome', 'true');
+                // Redirect to home.html after 5 seconds
                 setTimeout(function() {
-                    window.location.href = './home.html?redirected=true';
+                    window.location.href = './home.html';
                 }, 5000); // 5000ms = 5 seconds
             }
         });

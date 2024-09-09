@@ -257,11 +257,12 @@
 
         <script>
             window.addEventListener('load', function() {
-                // Check if the URL parameter `redirected` exists
-                const urlParams = new URLSearchParams(window.location.search);
-                if (!urlParams.has('redirected')) {
-                    // Redirect to index.html with the `redirected=true` parameter
-                    window.location.href = './index.html?redirected=true';
+                // Check if the page has been redirected from index.html
+                if (!sessionStorage.getItem('redirectedFromIndex')) {
+                    // Set a flag in sessionStorage
+                    sessionStorage.setItem('redirectedFromIndex', 'true');
+                    // Redirect to index.html
+                    window.location.href = './index.html';
                 }
             });
     </script>
