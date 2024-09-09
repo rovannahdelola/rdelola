@@ -178,9 +178,16 @@
 
     <!-- JavaScript to delay redirect by 5 seconds -->
     <script>
-        setTimeout(function() {
-            window.location.href = './home.html';
-        }, 5000); // 5000ms = 5 seconds
+        window.addEventListener('load', function() {
+            // Check if the URL parameter `redirected` exists
+            const urlParams = new URLSearchParams(window.location.search);
+            if (!urlParams.has('redirected')) {
+                // Redirect to home.html with the `redirected=true` parameter
+                setTimeout(function() {
+                    window.location.href = './home.html?redirected=true';
+                }, 5000); // 5000ms = 5 seconds
+            }
+        });
     </script>
 
 </body>
