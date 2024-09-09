@@ -83,12 +83,4 @@ ScrollReveal().reveal('.slide-up', {
     reset: true // Ensures animations occur every time elements come into view
 });
 
-const loader = document.querySelector('.loader');
-if (loader){
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            loader.remove();
-        }, 2700);
-    });
-}
 
