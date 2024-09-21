@@ -96,3 +96,5 @@ window.addEventListener('load', function() {
       
     }, 5000); // Wait for 5 seconds before starting the fade-out
   });
+
+  

@@ -638,3 +638,11 @@ header {
 	color: #333;
 }
 
+.contact h2{
+	font-family: "Kanit", sans-serif;
+    font-size: 3.5rem;
+    color: #274c77;
+    margin-bottom: 20px;
+	-webkit-text-stroke: 2px #8b8c89;
+    text-shadow: 2px 2px 5px #e7ecef;
+}
