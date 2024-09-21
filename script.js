@@ -46,15 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Get references to the menu icon, sidebar, close button, and overlay elements
+// Get references to the menu icon, sidebar, close button, overlay, and nav links
 const menuIcon = document.getElementById('menu-icon');
 const sidebar = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-btn');
 const overlay = document.getElementById('overlay');
+const navLinks = document.querySelectorAll('.nav-link'); // Select all navigation links
 
 // Function to toggle the sidebar and overlay visibility
 function toggleSidebar() {
-    // Check if the sidebar is currently open by checking if it has the 'open' class
     const isOpen = sidebar.classList.contains('open');
     if (isOpen) {
         // If open, remove the 'open' class from the sidebar and 'visible' class from the overlay
@@ -67,10 +67,22 @@ function toggleSidebar() {
     }
 }
 
+// Function to close the sidebar (for convenience)
+function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('visible');
+}
+
 // Add event listeners to handle clicks on the menu icon, close button, and overlay
 menuIcon.addEventListener('click', toggleSidebar);  // Toggle sidebar when menu icon is clicked
 closeBtn.addEventListener('click', toggleSidebar);  // Toggle sidebar when close button is clicked
 overlay.addEventListener('click', toggleSidebar);   // Toggle sidebar when overlay is clicked
+
+// Close the sidebar when any nav link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', closeSidebar); // Close sidebar on navigation link click
+});
+
 
 
 // mao ni tung animations sa scroll2 //
