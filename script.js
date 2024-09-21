@@ -44,6 +44,27 @@ document.addEventListener('DOMContentLoaded', function() {
         seeMoreBtn2.style.display = 'inline-block';
         showLessBtn2.style.display = 'none';
     });
+
+    // Personal Website Portfolio section
+const seeMoreBtnPersonal = document.getElementById('seeMoreBtnPersonal');
+const showLessBtnPersonal = document.getElementById('showLessBtnPersonal');
+const personalContent = document.querySelector('.personal-content'); // Corrected variable name
+
+seeMoreBtnPersonal.addEventListener('click', function(e) {
+    e.preventDefault();
+    personalContent.style.display = 'block'; // Fixed the variable name
+    seeMoreBtnPersonal.style.display = 'none';
+    showLessBtnPersonal.style.display = 'inline-block';
+});
+
+showLessBtnPersonal.addEventListener('click', function(e) {
+    e.preventDefault();
+    personalContent.style.display = 'none'; // Fixed the variable name
+    seeMoreBtnPersonal.style.display = 'inline-block';
+    showLessBtnPersonal.style.display = 'none';
+});
+
+
 });
 
 // Get references to the menu icon, sidebar, close button, overlay, and nav links
