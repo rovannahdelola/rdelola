@@ -279,22 +279,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-
-    <script>    
-          window.addEventListener('load', function() {
-            setTimeout(function() {
-              // Trigger fade-out by adding the 'fade-out' class
-              const loaderOverlay = document.getElementById('loader');
-              loaderOverlay.classList.add('fade-out');
-              
-              // After the fade-out transition completes (1 second), hide the loader completely
-              setTimeout(function() {
-                loaderOverlay.style.display = 'none';
-              }, 1000); // Match the duration of the CSS transition (1 second)
-              
-            }, 5000); // Wait for 5 seconds before starting the fade-out
-          });
-          
-    </script>
 </body>
 </html>

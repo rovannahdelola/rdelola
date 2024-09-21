@@ -83,4 +83,16 @@ ScrollReveal().reveal('.slide-up', {
     reset: true // Ensures animations occur every time elements come into view
 });
 
-
+window.addEventListener('load', function() {
+    setTimeout(function() {
+      // Trigger fade-out by adding the 'fade-out' class
+      const loaderOverlay = document.getElementById('loader');
+      loaderOverlay.classList.add('fade-out');
+      
+      // After the fade-out transition completes (1 second), hide the loader completely
+      setTimeout(function() {
+        loaderOverlay.style.display = 'none';
+      }, 1000); // Match the duration of the CSS transition (1 second)
+      
+    }, 5000); // Wait for 5 seconds before starting the fade-out
+  });
